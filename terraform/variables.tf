@@ -16,14 +16,7 @@ variable "vm_size" {
 variable "default_tags" {
   type = map(string)
   default = {
-    environment         = "dev"
-    owner               = "platform-team"
-    cost_centre         = "CC-4410"
-    data_classification = "confidential"
+    environment = "dev"
+    owner       = "cloud-team"
   }
-}
-
-variable "backup_retention_days" {
-  type    = number
-  default = 30
 }
