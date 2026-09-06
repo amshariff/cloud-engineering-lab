@@ -1,4 +1,3 @@
------ scripts/rotate-logs.sh -----
 #!/usr/bin/env bash
 # Rotate application logs daily, keeping seven compressed copies.
 set -euo pipefail
@@ -11,6 +10,3 @@ for f in "$LOG_DIR"/*.log; do
   gzip -c "$f" > "$f.1.gz" && : > "$f"
 done
 echo "Logs rotated in $LOG_DIR"
-----------------------------------
-
-
