@@ -22,3 +22,8 @@ variable "default_tags" {
     data_classification = "confidential"
   }
 }
+
+variable "backup_retention_days" {
+  type    = number
+  default = 30
+}
