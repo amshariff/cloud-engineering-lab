@@ -1,6 +1,6 @@
-.terraform/
 *.tfstate
 *.tfstate.*
+.terraform/
 *.auto.tfvars
 .DS_Store
 Thumbs.db
